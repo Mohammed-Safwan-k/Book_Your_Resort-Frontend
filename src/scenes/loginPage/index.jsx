@@ -14,7 +14,7 @@ const LoginPage = () => {
         textAlign="center"
       >
         <Typography fontWeight="bold" fontSize="32px" color="primary">
-          Weirdopedia
+          Book Your Stay
         </Typography>
       </Box>
       <Box
@@ -25,7 +25,7 @@ const LoginPage = () => {
         backgroundColor={theme.palette.background.alt}
       >
         <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }}>
-          Welcome to Weirdopedia, the place for Weirdoo's !
+          Welcome to Book Your Stay, Let's Decide Where To Stay  !
         </Typography>
         <Form />
       </Box>
