@@ -1,11 +1,13 @@
 import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
-import HomePage from "scenes/homePage";
-import LoginPage from "scenes/loginPage";
 import { useMemo } from "react";
 import { useSelector } from "react-redux";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { themeSettings } from "./theme";
+import AllRoomsPage from "scenes/AllRoomsPage/AllRoomsPage";
+import HomePage from "scenes/homePage";
+import LoginPage from "scenes/loginPage";
+import SingleRoomPage from "scenes/SingleRoomPage/SingleRoomPage";
 
 function App() {
   const mode = useSelector((state) => state.mode)
@@ -20,6 +22,8 @@ function App() {
           <Routes>
             <Route path="/" element={<LoginPage />} />
             <Route path="/home" element={<HomePage /> } />
+            <Route path="/hotels" element={<AllRoomsPage /> } />
+            <Route path="/hotels/:id" element={<SingleRoomPage /> } />
           </Routes>
         </ThemeProvider>
       </BrowserRouter>
