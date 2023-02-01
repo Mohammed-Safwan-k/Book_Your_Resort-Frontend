@@ -8,6 +8,7 @@ import AllRoomsPage from "scenes/AllRoomsPage/AllRoomsPage";
 import HomePage from "scenes/homePage";
 import LoginPage from "scenes/loginPage";
 import SingleRoomPage from "scenes/SingleRoomPage/SingleRoomPage";
+import Pagenotfound  from "scenes/PageNotFound";
 
 function App() {
   const mode = useSelector((state) => state.mode)
@@ -24,6 +25,8 @@ function App() {
             <Route path="/home" element={<HomePage /> } />
             <Route path="/hotels" element={<AllRoomsPage /> } />
             <Route path="/hotels/:id" element={<SingleRoomPage /> } />
+            <Route path="*" element={<Pagenotfound /> } />
+
           </Routes>
         </ThemeProvider>
       </BrowserRouter>
