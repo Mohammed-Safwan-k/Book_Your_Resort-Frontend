@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 const index = () => {
@@ -34,7 +35,7 @@ const index = () => {
             </p>
           </div>
           <div className="error__nav e-nav">
-            <a href="#" target="_blank" className="e-nav__link"></a>
+          <Link to="/home" className="e-nav__link"></Link>
           </div>
         </div>
       </section>
